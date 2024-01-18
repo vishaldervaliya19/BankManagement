@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .none{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .cta-button {
+    background-color: #1E438E;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .login-container h1 {
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .login-container img {
+    position: top;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: auto;
+    
+    border-top-left-radius: 0;
+
+    z-index: -1;
+  }
+  
+  .login-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #2980b9;
+  }
+  
+  .curved-corner {
+    border-bottom-right-radius: 70px;
+  }
