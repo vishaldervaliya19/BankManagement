@@ -1,0 +1,331 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: darkred;
+      }
+      header {
+        background-color: #003366;
+        border: 1px solid black;
+        color: white;
+        padding: 20px;
+      }
+      h1 {
+        margin-top: 10px;
+        color: rgb(252, 250, 250);
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        background-color: #f2f2f2;
+        padding: 10px;
+        border-radius: 5px;
+        flex: 1;
+        margin-right: 10px;
+      }
+      nav ul li a {
+        color: hsl(210,8%,15%);
+        text-decoration: none;
+      }
+      
+      li a:hover {
+        color: darkblue;
+        border-radius: 0;
+      }
+      a {
+          text-decoration: none;
+      }
+      main {
+        padding: 20px;
+      }
+      .widget-container {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(150px, 1fr));
+        justify-content: space-between;
+        grid-gap: 20px;
+        margin-top: 20px;
+      }
+      div .widget {
+        color: black;
+        background-color: white;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 0px;
+        margin-right: 10px;
+        transition: border-radius 0.3s ease-in-out;
+      }
+      div .widget:hover {
+        color: darkblue;
+        border-radius: 10px;
+        font-weight: bold;
+        box-shadow: 4px 6px 2px grey;
+      }
+      .widget h3 {
+        margin: 0;
+      }
+      .widget-value {
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .user-form {
+        width: 80%; 
+        margin-bottom: 20px;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        transition: border-radius 0.3s ease-in-out;
+      }
+      .user-form:hover {
+        border-radius: 0;
+      }
+      .row {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(150px, 1fr));
+        justify-content: space-between;
+        grid-gap: 10px;
+      }
+      h2,p {
+        text-align: left;
+        padding-left: 20px;
+      }
+      .user-form h3 {
+        margin-top: 0;
+      }
+      
+      .user-form label {
+        display: block;
+        margin-top: 10px;
+      }
+      
+      .user-form input,
+      .user-form select {
+        width: 80%;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+      }
+      
+      .user-form button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        }
+      
+      .user-table {
+        width: 90%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left: 20px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      
+      .user-table caption {
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      
+      .user-table th,
+      .user-table td {
+        padding: 8px;
+        border: 1px solid #ccc;
+      }
+      
+      .user-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        text-align: left;
+      }
+      
+      .user-table .edit-button,
+      .user-table .delete-button {
+        padding: 5px 10px;
+        border-radius: 5px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+      }
+      .account-form {
+        background-color: white;
+        width: 50%; 
+        margin-bottom: 20px;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+      }
+      .account-form h3 {
+        margin-top: 0;
+      }
+      .account-form label {
+        display: block;
+        margin-top: 10px;
+      }
+      .account-form input, textarea,
+      .account-form select {
+        width: 80%;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+      }
+      .account-form button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .account-table {
+        width: 90%;
+        background-color: white;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left:20px;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .account-table caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .account-table th,
+      .account-table td {
+        padding: 8px;
+        border: 1px solid #ccc;
+      }
+      .account-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        text-align: left;
+      }
+      .account-table .edit-button,
+      .account-table .delete-button {
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .transaction-filter-form {
+        width: 87%;
+        margin-bottom: 20px;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .transaction-filter-form h3 {
+        margin-top: 0;
+      }
+      .transaction-filter-form label {
+        display: block;
+        margin-top: 10px;
+      }
+      .transaction-filter-form input,
+      .transaction-filter-form select {
+        width: 60%;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+      }
+      .transaction-filter-form button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .transaction-table {
+        width: 90%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-left:20px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .transaction-table caption {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .transaction-table th,
+      .transaction-table td {
+        padding: 8px;
+        border: 1px solid #ccc;
+        
+      }
+      .transaction-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        text-align: left;
+      }
+      .report-generation {
+        margin-bottom: 20px;
+      }
+      .report-generation h3 {
+        margin-top: 0;
+      }
+      .report-generation select,
+      .report-generation button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      #analytics-chart-container {
+        width: 100%;
+        height: 10px;
+      }
+      .settings-form {
+        margin-bottom: 20px;
+      }
+      .settings-form h3 {
+        margin-top: 0;
+      }
+      .settings-form label {
+        display: block;
+        margin-top: 10px;
+      }
+      .settings-form input,
+      .settings-form select {
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        border-radius: 5px;
+      }
+      .settings-form button {
+        margin-top: 10px;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      .file-container {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          margin-top: 20px;
+          
+      }
+      .file-item {
+          background-color: white;
+          text-align: center;
+          margin: 10px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+      .file-item h3 {
+          margin-top: 0;
+      }
+      .file-item img {
+          max-width: 100%;
+          max-height: 200px;
+          border: 1px solid #ccc;
+          padding: 10px;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
