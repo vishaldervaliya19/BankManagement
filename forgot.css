@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.account-section {
+    margin: 50px;
+}
+
+form {
+    width: 30%;
+    padding: 40px;
+    border: 1px solid saddlebrown;
+}
+
+label {
+    padding: 10px;
+}
+input {
+    margin:  5px;
+}
+#ve {
+    padding:  2px;
+}
